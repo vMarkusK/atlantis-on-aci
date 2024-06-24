@@ -28,7 +28,7 @@ if [ "$ATLANTIS_LOCATION" == "" ]; then
 fi
 
 if [ "$SUFFIX" == "" ]; then
-    SUFFIX=$(cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 10 | head -n 1)
+    SUFFIX=$(cat /dev/urandom | tr -dc 'a-z0-9' | fold -w 10 | head -n 1)
 fi
 
 if [ "$ATLANTIS_RG_NAME" == "" ]; then
